@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% block title %}Success!{% endblock %}
+</head>
+
+<body>
+{% block body %}
+Your url is: <a href='{{ shorturl }}'>{{ shorturl }}</a>, which points to: <a href='{{ longurl }}'>{{ longurl }}</a>
+{% endblock %}	
+</body>
+
+</html>
